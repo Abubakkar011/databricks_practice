@@ -1,0 +1,6 @@
+locations:
+- build:
+    directory: ./dbt_prod
+  code_source:
+    module_name: dbt_prod.definitions
+  location_name: dbt_prod
