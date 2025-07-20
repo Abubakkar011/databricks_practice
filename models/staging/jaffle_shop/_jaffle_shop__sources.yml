@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    freshness:
+      warn_after:
+        count: 1
+        period: day
+      error_after:
+        count: 2
+        period: day
+    loaded_at_field: created_at
+    database: abu
+    schema: default
+    tables:
+      - name: customers
+        freshness: null
+      - name: orders
+        freshness: null
