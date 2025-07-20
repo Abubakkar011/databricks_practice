@@ -1,0 +1,6 @@
+locations:
+- build:
+    directory: ./databricks_practice
+  code_source:
+    module_name: databricks_practice.definitions
+  location_name: databricks_practice

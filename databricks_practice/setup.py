@@ -1,0 +1,25 @@
+from setuptools import find_packages, setup
+
+setup(
+    name="databricks_practice",
+    version="0.0.1",
+    packages=find_packages(),
+    package_data={
+        "databricks_practice": [
+            "dbt-project/**/*",
+        ],
+    },
+    install_requires=[
+        "dagster",
+        "dagster-cloud",
+        "dagster-dbt",
+        "dbt-core<1.11",
+        "dbt-databricks<1.11",
+    ],
+    extras_require={
+        "dev": [
+            "dagster-webserver",
+        ]
+    },
+)
+
