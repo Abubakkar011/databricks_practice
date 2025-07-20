@@ -1,2 +1,11 @@
-default: # Replace with your profile name
-target: dbt
+default:
+  target: dev
+  outputs:
+    dev:
+      type: databricks
+      catalog: abu         # or your Unity Catalog
+      schema: dbt              # replace with your schema
+      host: https://dbc-a2211bd0-48a4.cloud.databricks.com/
+      http_path: /sql/1.0/warehouses/0fd29643a4635474
+      token: dapid31fa1dc462d460905398847d3309d42
+      threads: 1
