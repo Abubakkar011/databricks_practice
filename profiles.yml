@@ -1,0 +1,2 @@
+default: # Replace with your profile name
+target: dbt
